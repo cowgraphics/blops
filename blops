@@ -5,76 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOPS FERIA TROLL</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="controls left">
+    <div class="container d-flex flex-column flex-md-row">
+        <div class="controls left col-md-3">
             <div class="sizes-colors">
                 <h3></h3>
-                <div class="column">
-                    <button class="size-button" data-size="S">S</button>
-                    <button class="color-button" style="background-color: #ff3f3f;" data-size="cG" data-color="#ff3f3f"></button>
-                    <button class="color-button" style="background-color: #06a543;" data-size="cR" data-color="#06a543"></button>
-                    <button class="color-button" style="background-color: #4aa7ff;" data-size="cC" data-color="#4aa7ff"></button>
-                    <button class="color-button" style="background-color: #f7f7cf;" data-size="cI" data-color="#f7f7cf"></button>
-                </div>
-                <div class="column">
-                    <button class="size-button" data-size="M">M</button>
-                    <button class="color-button" style="background-color: #ff3f3f;" data-size="mG" data-color="#ff3f3f"></button>
-                    <button class="color-button" style="background-color: #06a543;" data-size="mR" data-color="#06a543"></button>
-                    <button class="color-button" style="background-color: #4aa7ff;" data-size="mC" data-color="#4aa7ff"></button>
-                    <button class="color-button" style="background-color: #f7f7cf;" data-size="mI" data-color="#f7f7cf"></button>
-                </div>
-                <div class="column">
-                    <button class="size-button" data-size="L">L</button>
-                    <button class="color-button" style="background-color: #ff3f3f;" data-size="gG" data-color="#ff3f3f"></button>
-                    <button class="color-button" style="background-color: #06a543;" data-size="gR" data-color="#06a543"></button>
-                    <button class="color-button" style="background-color: #4aa7ff;" data-size="gC" data-color="#4aa7ff"></button>
-                    <button class="color-button" style="background-color: #f7f7cf;" data-size="gI" data-color="#f7f7cf"></button>
+                <div class="row">
+                    <div class="col-4">
+                        <button class="size-button" data-size="S">S</button>
+                        <button class="color-button" style="background-color: #ff3f3f;" data-size="cG" data-color="#ff3f3f"></button>
+                        <button class="color-button" style="background-color: #06a543;" data-size="cR" data-color="#06a543"></button>
+                        <button class="color-button" style="background-color: #4aa7ff;" data-size="cC" data-color="#4aa7ff"></button>
+                        <button class="color-button" style="background-color: #f7f7cf;" data-size="cI" data-color="#f7f7cf"></button>
+                    </div>
+                    <div class="col-4">
+                        <button class="size-button" data-size="M">M</button>
+                        <button class="color-button" style="background-color: #ff3f3f;" data-size="mG" data-color="#ff3f3f"></button>
+                        <button class="color-button" style="background-color: #06a543;" data-size="mR" data-color="#06a543"></button>
+                        <button class="color-button" style="background-color: #4aa7ff;" data-size="mC" data-color="#4aa7ff"></button>
+                        <button class="color-button" style="background-color: #f7f7cf;" data-size="mI" data-color="#f7f7cf"></button>
+                    </div>
+                    <div class="col-4">
+                        <button class="size-button" data-size="L">L</button>
+                        <button class="color-button" style="background-color: #ff3f3f;" data-size="gG" data-color="#ff3f3f"></button>
+                        <button class="color-button" style="background-color: #06a543;" data-size="gR" data-color="#06a543"></button>
+                        <button class="color-button" style="background-color: #4aa7ff;" data-size="gC" data-color="#4aa7ff"></button>
+                        <button class="color-button" style="background-color: #f7f7cf;" data-size="gI" data-color="#f7f7cf"></button>
+                    </div>
                 </div>
             </div>
 
             <div class="undo-container">
                 <button class="undo-button" id="undoButton">&#x2190;</button>
             </div>
-
         </div>
 
-        <div class="iso-grid">
-            <div class="iso-tile" data-index="1"></div>
-            <div class="iso-tile" data-index="2"></div>
-            <div class="iso-tile" data-index="3"></div>
-            <div class="iso-tile" data-index="4"></div>
-            <div class="iso-tile" data-index="5"></div>
-            <div class="iso-tile" data-index="6"></div>
-            <div class="iso-tile" data-index="7"></div>
-            <div class="iso-tile" data-index="8"></div>
-            <div class="iso-tile" data-index="9"></div>
-            <div class="iso-tile" data-index="10"></div>
-            <div class="iso-tile" data-index="11"></div>
-            <div class="iso-tile" data-index="12"></div>
-            <div class="iso-tile" data-index="13"></div>
-            <div class="iso-tile" data-index="14"></div>
-            <div class="iso-tile" data-index="15"></div>
-            <div class="iso-tile" data-index="16"></div>
-            <div class="iso-tile" data-index="17"></div>
-            <div class="iso-tile" data-index="18"></div>
-            <div class="iso-tile" data-index="19"></div>
-            <div class="iso-tile" data-index="20"></div>
-            <div class="iso-tile" data-index="21"></div>
-            <div class="iso-tile" data-index="22"></div>
-            <div class="iso-tile" data-index="23"></div>
-            <div class="iso-tile" data-index="24"></div>
+        <div class="iso-grid col-md-9">
+            <div class="row">
+                <div class="col-3"><div class="iso-tile" data-index="1"></div></div>
+                <div class="col-3"><div class="iso-tile" data-index="2"></div></div>
+                <div class="col-3"><div class="iso-tile" data-index="3"></div></div>
+                <div class="col-3"><div class="iso-tile" data-index="4"></div></div>
+            </div>
+            <!-- Repeat for remaining tiles -->
         </div>
 
-        <div class="controls top">
+        <div class="controls top col-12">
             <div class="buttons-container">
                 <button class="reset-button" id="resetButton">RESET</button>
             </div>
         </div>
     </div> 
-
-  
 
     <script src="script.js"></script>
 </body>
